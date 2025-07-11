@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age Verification</title>
+  <script>
+    function verifyAge() {
+      var age = prompt("Enter your age:");
+
+      if (age !== null) {
+        age = parseInt(age);
+
+        if (!isNaN(age)) {
+          if (age >= 18) {
+            alert("Welcome! You are allowed to enter.");
+          } else {
+            alert("Sorry, you are not allowed to enter.");
+          }
+        } else {
+          alert("Please enter a valid number.");
+        }
+      }
+    }
+  </script>
+</head>
+<body onload="verifyAge()">
+  <h2>Age Verification Page</h2>
+</body>
+</html>

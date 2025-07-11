@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Calculator</title>
+</head>
+<body>
+
+  <script>
+    // Prompt user for input
+    let num1 = parseFloat(prompt("Enter the first number:"));
+    let num2 = parseFloat(prompt("Enter the second number:"));
+
+    // Define calculator functions
+    function add(a, b) {
+      return a + b;
+    }
+
+    function subtract(a, b) {
+      return a - b;
+    }
+
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    function divide(a, b) {
+      return b !== 0 ? (a / b) : "Cannot divide by zero";
+    }
+
+    // Perform all calculations
+    document.write("<h2>Calculation Results</h2>");
+    document.write("Addition: " + add(num1, num2) + "<br>");
+    document.write("Subtraction: " + subtract(num1, num2) + "<br>");
+    document.write("Multiplication: " + multiply(num1, num2) + "<br>");
+    document.write("Division: " + divide(num1, num2));
+  </script>
+
+</body>
+</html>
